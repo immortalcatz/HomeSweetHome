@@ -8,6 +8,7 @@
 package homesweethome.core;
 
 import homesweethome.init.ModBlocks;
+import homesweethome.init.ModCrafting;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -35,5 +36,7 @@ public class HomeSweetHome
     public void preInit(FMLPreInitializationEvent event)
     {	
     	ModBlocks.init();
+    	
+    	ModCrafting.init();
     }
 }

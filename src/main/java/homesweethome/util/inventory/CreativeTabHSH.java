@@ -1,8 +1,9 @@
 package homesweethome.util.inventory;
 
+import homesweethome.api.HSHBlocks;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public class CreativeTabHSH extends CreativeTabs
 {
@@ -16,6 +17,6 @@ public class CreativeTabHSH extends CreativeTabs
     @Override
     public Item getTabIconItem()
     {
-        return Items.bed;
+        return new ItemStack(HSHBlocks.cushioned_chair).getItem();
     }
 }

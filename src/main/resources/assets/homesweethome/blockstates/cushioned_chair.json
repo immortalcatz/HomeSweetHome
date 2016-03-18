@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "homesweethome:cushioned_chair"},
+        "facing=south": { "model": "homesweethome:cushioned_chair", "y": 180 },
+        "facing=west":  { "model": "homesweethome:cushioned_chair", "y": 270 },
+        "facing=east":  { "model": "homesweethome:cushioned_chair", "y": 90 }
+    }
+}

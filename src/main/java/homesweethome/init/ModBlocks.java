@@ -1,8 +1,9 @@
 package homesweethome.init;
 
-import static homesweethome.api.HSHBlocks.chair;
+import static homesweethome.api.HSHBlocks.*;
 import homesweethome.api.IHSHBlock;
 import homesweethome.block.BlockHSHChair;
+import homesweethome.block.BlockHSHCushionedChair;
 import homesweethome.core.HomeSweetHome;
 import homesweethome.util.BlockStateUtils;
 import homesweethome.util.inventory.CreativeTabHSH;
@@ -21,6 +22,7 @@ public class ModBlocks
     public static void init()
     {
         chair = registerBlock( new BlockHSHChair(), "chair" );
+        cushioned_chair = registerBlock( new BlockHSHCushionedChair(), "cushioned_chair" );
     }
     
     
