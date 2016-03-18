@@ -1,5 +1,8 @@
 {
     "variants": {
-        "normal": { "model": "homesweethome:chair" }
+        "facing=north": { "model": "homesweethome:chair", "y": 180 },
+        "facing=south": { "model": "homesweethome:chair"},
+        "facing=west":  { "model": "homesweethome:chair", "y": 90 },
+        "facing=east":  { "model": "homesweethome:chair", "y": 270 }
     }
 }

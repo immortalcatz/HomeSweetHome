@@ -1,6 +1,7 @@
 {
     "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
     "textures": {
+		"particle": "homesweethome:blocks/chair_cushion_top",
         "0": "homesweethome:blocks/chair_back",
         "1": "homesweethome:blocks/chair_back_side",
         "2": "homesweethome:blocks/chair_back_front",
