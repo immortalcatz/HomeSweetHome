@@ -1,16 +1,14 @@
 {
     "parent": "block/block",
     "textures": {
-		"particle": "homesweethome:blocks/chair_cushion_top",
-        "0": "homesweethome:blocks/chair_back_front",
-        "1": "homesweethome:blocks/chair_back_side",
-        "2": "homesweethome:blocks/chair_back",
-        "3": "homesweethome:blocks/chair_top",
-        "4": "homesweethome:blocks/chair_front",
-        "5": "homesweethome:blocks/chair_side",
-        "6": "homesweethome:blocks/chair_front_top",
-        "7": "homesweethome:blocks/chair_cushion_side",
-        "8": "homesweethome:blocks/chair_cushion_top"
+		"particle": "homesweethome:blocks/chair_back_oak",
+        "0": "homesweethome:blocks/chair_back_front_oak",
+        "1": "homesweethome:blocks/chair_back_side_oak",
+        "2": "homesweethome:blocks/chair_back_oak",
+        "3": "homesweethome:blocks/chair_top_oak",
+        "4": "homesweethome:blocks/chair_front_oak",
+        "5": "homesweethome:blocks/chair_side_oak",
+        "6": "homesweethome:blocks/chair_front_top_oak"
     },
     "elements": [
         {
@@ -34,18 +32,6 @@
                 "east": { "texture": "#5", "uv": [ 2.0, 10.0, 14.0, 16.0 ] },
                 "west": { "texture": "#5", "uv": [ 2.0, 16.0, 14.0, 10.0 ], "rotation": 180 },
                 "up": { "texture": "#6", "uv": [ 1.0, 2.0, 15.0, 14.0 ], "rotation": 180 }
-            }
-        },
-        {
-            "name": "Cushion",
-            "from": [ 1.0, 6.0, 1.0 ], 
-            "to": [ 15.0, 8.0, 13.0 ], 
-            "faces": {
-                "north": { "texture": "#7", "uv": [ 1.0, 14.0, 15.0, 16.0 ] },
-                "east": { "texture": "#7", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
-                "south": { "texture": "#7", "uv": [ 1.0, 14.0, 15.0, 16.0 ] },
-                "west": { "texture": "#7", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
-                "up": { "texture": "#8", "uv": [ 1.0, 2.0, 15.0, 14.0 ], "rotation": 180 }
             }
         }
     ]

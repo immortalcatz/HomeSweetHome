@@ -4,10 +4,12 @@ import homesweethome.api.HSHBlocks;
 import homesweethome.api.IHSHBlock;
 import homesweethome.item.ItemHSHBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
@@ -25,6 +27,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class BlockHSHChair extends Block implements IHSHBlock
 {
     protected static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.1D, 0.1D, 0.1D, 0.9D, 0.6D, 0.9D);
+    
+    public static final PropertyEnum<BlockPlanks.EnumType> VARIANT = PropertyEnum.<BlockPlanks.EnumType>create("variant", BlockPlanks.EnumType.class);
     
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
@@ -50,7 +54,7 @@ public class BlockHSHChair extends Block implements IHSHBlock
         // set some defaults
         this.setTickRandomly(true);
         this.setHardness(1.0F);
-        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(VARIANT, BlockPlanks.EnumType.OAK));
         this.setSoundType(SoundType.WOOD);
     }
     
