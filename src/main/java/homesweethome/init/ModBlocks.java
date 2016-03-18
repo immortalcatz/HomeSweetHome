@@ -2,13 +2,10 @@ package homesweethome.init;
 
 import static homesweethome.api.HSHBlocks.chair;
 import static homesweethome.api.HSHBlocks.cushioned_chair;
-import static homesweethome.api.HSHBlocks.end_table;
-
-import com.google.common.collect.ImmutableSet;
-
+import static homesweethome.api.HSHBlocks.table;
 import homesweethome.api.IHSHBlock;
 import homesweethome.block.BlockHSHChair;
-import homesweethome.block.BlockHSHEndTable;
+import homesweethome.block.BlockHSHTable;
 import homesweethome.core.HomeSweetHome;
 import homesweethome.util.BlockStateUtils;
 import homesweethome.util.inventory.CreativeTabHSH;
@@ -19,6 +16,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+import com.google.common.collect.ImmutableSet;
+
 public class ModBlocks
 {
     
@@ -26,7 +25,7 @@ public class ModBlocks
     {
         chair = registerBlock( new BlockHSHChair(), "chair" );
         cushioned_chair = registerBlock( new BlockHSHChair(), "cushioned_chair" );
-        end_table = registerBlock( new BlockHSHEndTable(), "end_table" );
+        table = registerBlock( new BlockHSHTable(), "table" );
     }
     
     

@@ -1,5 +1,5 @@
 itemGroup.tabHomeSweetHome=Home Sweet Home
 
-tile.chair.name=Chair
-tile.cushioned_chair.name=Cushioned Chair
-tile.end_table.name=End Table
+tile.chair.name=Oak Chair
+tile.cushioned_chair.name=Cushioned Oak Chair
+tile.table.name=Oak Table

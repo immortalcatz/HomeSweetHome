@@ -1,10 +1,10 @@
 {
     "parent": "block/block",
     "textures": {
-		"particle": "homesweethome:blocks/end_table_top",
-        "0": "homesweethome:blocks/end_table_side",
-        "1": "homesweethome:blocks/end_table_top",
-        "2": "homesweethome:blocks/end_table_leg"
+		"particle": "homesweethome:blocks/table_top_oak",
+        "0": "homesweethome:blocks/table_side_oak",
+        "1": "homesweethome:blocks/table_top_oak",
+        "2": "homesweethome:blocks/table_leg_oak"
     },
     "elements": [
         {

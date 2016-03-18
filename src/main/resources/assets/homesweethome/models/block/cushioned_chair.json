@@ -1,0 +1,62 @@
+{
+    "parent": "block/block",
+    "textures": {
+		"particle": "homesweethome:blocks/chair_cushion_top",
+        "0": "homesweethome:blocks/chair_back_oak",
+        "1": "homesweethome:blocks/chair_back_side_oak",
+        "2": "homesweethome:blocks/chair_back_top_oak",
+        "3": "homesweethome:blocks/chair_legs_front_oak",
+        "4": "homesweethome:blocks/chair_legs_side_oak",
+        "5": "homesweethome:blocks/chair_legs_back_oak",
+        "6": "homesweethome:blocks/chair_seat_top_oak",
+        "7": "minecraft:blocks/planks_oak",
+        "8": "homesweethome:blocks/chair_cushion_side",
+        "9": "homesweethome:blocks/chair_cushion_top"
+    },
+    "elements": [
+        {
+            "name": "Chair Back",
+            "from": [ 1.0, 6.0, 13.0 ], 
+            "to": [ 15.0, 16.0, 15.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 1.0, 0.0, 15.0, 10.0 ] },
+                "east": { "texture": "#1", "uv": [ 1.0, 0.0, 3.0, 10.0 ] },
+                "south": { "texture": "#0", "uv": [ 1.0, 0.0, 15.0, 10.0 ] },
+                "west": { "texture": "#1", "uv": [ 3.0, 0.0, 1.0, 10.0 ] },
+                "up": { "texture": "#2", "uv": [ 1.0, 13.0, 15.0, 15.0 ], "rotation": 180 }
+            }
+        },
+        {
+            "name": "Chair Legs",
+            "from": [ 1.0, 0.0, 1.0 ], 
+            "to": [ 15.0, 6.0, 15.0 ], 
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 1.0, 10.0, 15.0, 16.0 ] },
+                "east": { "texture": "#4", "uv": [ 1.0, 10.0, 15.0, 16.0 ] },
+                "south": { "texture": "#5", "uv": [ 1.0, 10.0, 15.0, 16.0 ] },
+                "west": { "texture": "#4", "uv": [ 15.0, 10.0, 1.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Chair Seat",
+            "from": [ 1.0, 6.0, 1.0 ], 
+            "to": [ 15.0, 6.0, 13.0 ], 
+            "faces": {
+                "up": { "texture": "#6", "uv": [ 1.0, 2.0, 15.0, 14.0 ], "rotation": 180 },
+                "down": { "texture": "#7", "uv": [ 0.0, 0.0, 14.0, 12.0 ] }
+            }
+        },
+        {
+            "name": "Chair Cushion",
+            "from": [ 1.0, 6.0, 1.0 ], 
+            "to": [ 15.0, 8.0, 13.0 ], 
+            "faces": {
+                "north": { "texture": "#8", "uv": [ 1.0, 14.0, 15.0, 16.0 ] },
+                "east": { "texture": "#8", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "south": { "texture": "#8", "uv": [ 1.0, 14.0, 15.0, 16.0 ] },
+                "west": { "texture": "#8", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "up": { "texture": "#9", "uv": [ 1.0, 2.0, 15.0, 14.0 ], "rotation": 180 }
+            }
+        }
+    ]
+}

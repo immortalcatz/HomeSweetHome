@@ -28,8 +28,6 @@ public class BlockHSHChair extends Block implements IHSHBlock
 {
     protected static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.1D, 0.1D, 0.1D, 0.9D, 0.6D, 0.9D);
     
-    public static final PropertyEnum<BlockPlanks.EnumType> VARIANT = PropertyEnum.<BlockPlanks.EnumType>create("variant", BlockPlanks.EnumType.class);
-    
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
     // implement IBOPBlock
@@ -54,7 +52,7 @@ public class BlockHSHChair extends Block implements IHSHBlock
         // set some defaults
         this.setTickRandomly(true);
         this.setHardness(1.0F);
-        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(VARIANT, BlockPlanks.EnumType.OAK));
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         this.setSoundType(SoundType.WOOD);
     }
     

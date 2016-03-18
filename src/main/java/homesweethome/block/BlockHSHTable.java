@@ -15,7 +15,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockHSHEndTable extends Block implements IHSHBlock
+public class BlockHSHTable extends Block implements IHSHBlock
 {
     protected static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.1D, 0.0D, 0.1D, 0.9D, 0.9D, 0.9D);
     
@@ -30,12 +30,12 @@ public class BlockHSHEndTable extends Block implements IHSHBlock
     public String getStateName(IBlockState state) {return "";}
 
     
-    public BlockHSHEndTable() {
+    public BlockHSHTable() {
         // use rock as default material
         this(Material.wood);
     }
     
-    public BlockHSHEndTable(Material material)
+    public BlockHSHTable(Material material)
     {
         super(material);
         // set some defaults

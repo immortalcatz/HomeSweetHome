@@ -6,5 +6,5 @@ public class HSHBlocks
 {
     public static Block chair;
     public static Block cushioned_chair;
-    public static Block end_table;
+    public static Block table;
 }
