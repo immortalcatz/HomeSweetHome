@@ -7,21 +7,45 @@
  ******************************************************************************/
 package homesweethome.core;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.particle.EntityFX;
-import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.entity.RenderManager;
+import homesweethome.api.IHSHBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.properties.IProperty;
+import net.minecraft.client.renderer.block.statemap.IStateMapper;
+import net.minecraft.client.renderer.block.statemap.StateMap;
 import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
-import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.client.registry.IRenderFactory;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
 
 public class ClientProxy extends CommonProxy
 {
+	
+    @Override
+    public void registerItemVariantModel(Item item, String name, int metadata) 
+    {
+        if (item != null) 
+        { 
+            ModelBakery.registerItemVariants(item, new ResourceLocation("homesweethome:" + name));
+            ModelLoader.setCustomModelResourceLocation(item, metadata, new ModelResourceLocation(HomeSweetHome.MOD_ID + ":" + name, "inventory"));
+        }
+    }
+    
+    @Override
+    public void registerNonRenderingProperties(Block block) 
+    {
+        if (block instanceof IHSHBlock)
+        {
+            IHSHBlock hshBlock = (IHSHBlock)block;
+            IProperty[] nonRenderingProperties = hshBlock.getNonRenderingProperties();
+
+            if (nonRenderingProperties != null)
+            {
+                // use a custom state mapper which will ignore the properties specified in the block as being non-rendering
+                IStateMapper custom_mapper = (new StateMap.Builder()).ignore(nonRenderingProperties).build();
+                ModelLoader.setCustomStateMapper(block, custom_mapper);
+            }
+        }
+    }
 }

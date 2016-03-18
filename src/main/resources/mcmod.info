@@ -1,0 +1,9 @@
+[{
+    "modid": "HomeSweetHome",
+    "name": "Home Sweet Home",
+    "description": "Adds new furniture, both for indoor and outdoor use!",
+    "version": "${mod_version}",
+    "mcversion": "${minecraft_version}",
+    "authorList": ["Adubbz", "Forstride"],
+    "logoFile": "assets/homesweethome/textures/gui/logo.png"
+}]
