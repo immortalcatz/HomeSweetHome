@@ -1,6 +1,4 @@
-<p align="center"><img src="http://i.imgur.com/iJCLqL6.png"></p>
-
-**Bullseye** is a **Minecraft mod** that adds **new arrows,** including **fire arrows, bomb arrows, and more!**
+**Home Sweet Home** is a **Minecraft mod** that adds an assortment of **new furniture**, including **chairs, tables, and other decorations**, both for **indoors and outdoors!**
 
 -----------------
 
