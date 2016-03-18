@@ -53,14 +53,6 @@ public class ItemHSHBlock extends ItemBlock
             }
         }
     }
-    
-    // TODO: renderPass is actually tintIndex - use for berries etc?
-    @SideOnly(Side.CLIENT)
-    @Override
-    public int getColorFromItemStack(ItemStack stack, int tintIndex)
-    {
-        return this.hshBlock.getItemRenderColor(this.block.getStateFromMeta(stack.getMetadata()), tintIndex);
-    }
 
     @Override
     public int getMetadata(int metadata)

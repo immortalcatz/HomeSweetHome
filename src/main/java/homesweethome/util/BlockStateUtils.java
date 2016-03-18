@@ -134,7 +134,7 @@ public class BlockStateUtils
     
     public static IProperty getPropertyByName(IBlockState blockState, String propertyName)
     {
-        for (IProperty property : (ImmutableSet<IProperty>) blockState.getProperties().keySet())
+        for (IProperty property : (ImmutableSet<IProperty<?>>) blockState.getProperties().keySet())
         {
             if (property.getName().equals(propertyName))
                 return property;

@@ -1,5 +1,5 @@
 {
-    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "block/block",
     "textures": {
 		"particle": "homesweethome:blocks/chair_back",
         "0": "homesweethome:blocks/chair_back_front",
