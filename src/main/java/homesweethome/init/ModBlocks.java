@@ -1,9 +1,12 @@
 package homesweethome.init;
 
-import static homesweethome.api.HSHBlocks.*;
+import static homesweethome.api.HSHBlocks.chair;
+import static homesweethome.api.HSHBlocks.cushioned_chair;
+import static homesweethome.api.HSHBlocks.end_table;
 import homesweethome.api.IHSHBlock;
 import homesweethome.block.BlockHSHChair;
 import homesweethome.block.BlockHSHCushionedChair;
+import homesweethome.block.BlockHSHEndTable;
 import homesweethome.core.HomeSweetHome;
 import homesweethome.util.BlockStateUtils;
 import homesweethome.util.inventory.CreativeTabHSH;
@@ -23,6 +26,7 @@ public class ModBlocks
     {
         chair = registerBlock( new BlockHSHChair(), "chair" );
         cushioned_chair = registerBlock( new BlockHSHCushionedChair(), "cushioned_chair" );
+        end_table = registerBlock( new BlockHSHEndTable(), "end_table" );
     }
     
     

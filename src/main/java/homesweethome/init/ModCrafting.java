@@ -20,9 +20,12 @@ public class ModCrafting
     {
     	// Register crafting recipes
     	
-    	// Chair
+    	// Chairs
     	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(HSHBlocks.chair, 2), new Object [] {"W  ", "WWW", "W W", 'W', "plankWood"}));
     	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(HSHBlocks.cushioned_chair, 2), new Object [] {"WCC", "WWW", "W W", 'W', "plankWood", 'C', Blocks.wool}));
+    
+    	// Tables
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(HSHBlocks.end_table, 2), new Object [] {"WWW", "W W", "W W", 'W', "plankWood"}));
     }
     
     public static void addSmeltingRecipes()
