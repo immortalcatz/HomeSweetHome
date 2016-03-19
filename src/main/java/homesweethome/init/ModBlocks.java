@@ -1,9 +1,11 @@
 package homesweethome.init;
 
+import static homesweethome.api.HSHBlocks.bird_bath;
 import static homesweethome.api.HSHBlocks.chair;
 import static homesweethome.api.HSHBlocks.cushioned_chair;
 import static homesweethome.api.HSHBlocks.table;
 import homesweethome.api.IHSHBlock;
+import homesweethome.block.BlockHSHBirdBath;
 import homesweethome.block.BlockHSHChair;
 import homesweethome.block.BlockHSHTable;
 import homesweethome.core.HomeSweetHome;
@@ -26,6 +28,7 @@ public class ModBlocks
         chair = registerBlock( new BlockHSHChair(), "chair" );
         cushioned_chair = registerBlock( new BlockHSHChair(), "cushioned_chair" );
         table = registerBlock( new BlockHSHTable(), "table" );
+        bird_bath = registerBlock( new BlockHSHBirdBath(), "bird_bath" );
     }
     
     
